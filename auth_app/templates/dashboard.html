@@ -2,8 +2,10 @@
 
 {% block content %}
 
-<h1>Hello {{ request.user.username }} welcome to the world!</h1>
-<a href="{% url 'logout' %}" class="btn btn-dark">Logout</a>
+<div class="d-flex justify-content-center align-items-center">
+    <h1 class="">Hello {{ request.user.username }} welcome to the world!</h1>
+    <a href="{% url 'logout' %}" class="btn btn-dark">Logout</a>
+</div>
 
 
 {% endblock %}
